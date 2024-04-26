@@ -32,18 +32,26 @@ body {
 #section1 p{
     padding: 3px;
 }
+.seul-icone{
+    color:#000;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+}
 
 form input{
     border:none;
     border-top:1px solid #F2F2F2;
     border-bottom:1px solid #F2F2F2 ;
     text-align: center;
-    color: #000;
+    color:black;
     font-size: 18px;
-    margin:0 -4px;
+    margin:0 -24px;
     font-weight: 700;
-    height: 37px;
+    height: 49px;
     padding:0px;
+    padding-right: 24px;
 }
 
 input#bouton{
@@ -51,8 +59,8 @@ input#bouton{
     color:white;
     border:none;
     border-radius: 0px 12px 12px 0px;
-    padding: 0px 12px;
     height: 39px;
+    padding: 9px 10px 41px 14px;
 }
 #section1 ul li:hover{
     background: #DEEBFF;
@@ -60,6 +68,11 @@ input#bouton{
 
 #section1 form{
     margin:30px 0px;
+    display: flex;
+    width: 377px;
+    height: 49px;
+    align-items: center;
+    gap: 24px;
 }
 
 #section1 form i{
@@ -67,6 +80,8 @@ input#bouton{
     padding: 12px;
     border-radius: 12px 0px 0px 12px;
     padding-bottom: 11px;
+    width: 35px;
+    height: 32px;
 }
 
 #section1 .filter ul{
@@ -98,12 +113,13 @@ input#bouton{
     color: blue;
     font-size: 10px;
     border-radius: 50%;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     display: flex;
     border: 1px solid grey;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    margin-right: 10px; 
 }
 
 #section1 ul li{
@@ -178,6 +194,8 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    padding: 30px 0px 0px 30px
+    
 }
 
 .card {
@@ -212,8 +230,8 @@ a {
 
 .hebergements-and-populaires {
     border-radius: 20px;
-    padding: 30px;
     box-sizing: border-box;
+
 }
 
 /****** Hebergements ***********/
@@ -233,9 +251,9 @@ section#hebergement-marseille{
     padding: 30px;
     flex-direction: column;
     align-items: flex-start;
-    gap: 30px;
     align-self: stretch;
     border-radius: 15px;
+    margin-left: -8px;
 }
 
 #hebergement-marseille img{
@@ -246,26 +264,27 @@ section#hebergement-marseille{
     height:150px;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-    padding: 0 0 20px 0;
 }
+
 
 #hebergement-cards1 article{
     border-radius: 25px;
-    padding:4px 4px 8px 4px;
+    padding:4px 4px 0px 4px;
     background-color: white;
-    margin-bottom: 30px;
-    box-shadow: 0px 2px 5px #c1c1c1;
+    box-shadow: 0px 3px 15px 0px #c1c1c1;
 }
 
-#hebergement-cards h2{
-    padding: 10px 10px 10px 10px;
+#hebergement-cards1 h2{
+    padding: 0px 10px 10px 10px;
+    font-size:22px;
+    margin-top:0px;
 }
-#hebergement-cards h3{
+ h3{
     color: #000;
     box-shadow: none;
-    margin: 0px 0px 10px 0px;
+    margin: 0px 0px 8px 0px;
 }
-#hebergement-cards p{
+#hebergement-cards1 p{
     color: #000;
     box-shadow: none;
     margin: 0px 0px 8px 0px;
@@ -273,7 +292,7 @@ section#hebergement-marseille{
 #hebergement-cards1 i{
     list-style: none;
 }
-#hebergements-cards p i{
+#hebergements-cards1 p i{
     color: black;
 }
 
@@ -284,6 +303,20 @@ section#hebergement-marseille{
     display: flex;
 }
 
+h3, p {
+    margin-bottom: 8px;
+    padding: 0px 15px;;
+}
+
+p + .star {
+    margin-top: 8px;
+}
+
+.star{
+    margin:15px 0px;
+    padding:0px 15px;
+}
+
 /****** Populaires ***********/
 .populaires {
     display: flex;
@@ -291,16 +324,17 @@ section#hebergement-marseille{
     padding: 30px;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
     align-self: stretch;
     background: #F2F2F2;
     border-radius: 15px;
+    padding: 0px;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .populaires-cards .card {
@@ -371,6 +405,7 @@ section#hebergement-marseille{
     height:350px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
+    margin-bottom: -5px;
 }
 
 #activites{
@@ -386,10 +421,11 @@ section#hebergement-marseille{
 
 #activites .image-marseille .legende{
     font-weight: 700;
-    padding:10px 15px 20px 20px;
+    padding:20px 19px 20px 19px;
     background-color: white;
     border-radius: 0 0 20px 20px;
     color: #000;
+    margin:0px;
 }
 
 #activites a{
@@ -414,7 +450,7 @@ footer ul{
 
 footer h2,
 footer ul li{
-    margin-bottom: 15px;
+    margin: 0px;
 }
 
 
