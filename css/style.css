@@ -23,15 +23,16 @@ body {
 }
 
 #section1 h1{
-    margin: 20px 0 0 0;
+    margin: 20px 0 8px 0;
     font-size: 22px;
     font-weight: 700;
     padding: 0;
 }
 
 #section1 p{
-    padding: 3px;
+    margin:0;
 }
+
 .seul-icone{
     color:#000;
     display: flex;
@@ -59,9 +60,9 @@ input#bouton{
     color:white;
     border:none;
     border-radius: 0px 12px 12px 0px;
-    height: 39px;
-    padding: 9px 10px 41px 14px;
+    padding-left: 16px;
 }
+
 #section1 ul li:hover{
     background: #DEEBFF;
 }
@@ -79,9 +80,9 @@ input#bouton{
     background-color: #F2F2F2;
     padding: 12px;
     border-radius: 12px 0px 0px 12px;
-    padding-bottom: 11px;
     width: 35px;
-    height: 32px;
+    height: 29px;
+    align-items: center;
 }
 
 #section1 .filter ul{
@@ -176,8 +177,9 @@ nav ul a{
 
 nav a:hover{
     color:#0065FC;
-    border-top: 3px solid #0065FC;
-    padding-top: 5px;
+    border-top: 3px solid #FFFFFF;
+    padding-top: 6px;
+
 }
 
 ul{
@@ -192,10 +194,8 @@ a {
 }
 
 .section-title {
-    margin: 0;
-    font-size: 22px;
-    padding: 30px 0px 0px 30px
-    
+    margin: 30px;
+    font-size: 22px;  
 }
 
 .card {
@@ -213,7 +213,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .euro {
@@ -253,7 +253,6 @@ section#hebergement-marseille{
     align-items: flex-start;
     align-self: stretch;
     border-radius: 15px;
-    margin-left: -8px;
 }
 
 #hebergement-marseille img{
@@ -279,19 +278,25 @@ section#hebergement-marseille{
     font-size:22px;
     margin-top:0px;
 }
- h3{
+
+#hebergement-cards1 h3{
     color: #000;
     box-shadow: none;
-    margin: 0px 0px 8px 0px;
+    margin: 4px 0px 8px 0px;
+    padding:0px 15px;
 }
+
 #hebergement-cards1 p{
     color: #000;
     box-shadow: none;
     margin: 0px 0px 8px 0px;
+    padding:0px 15px;
 }
+
 #hebergement-cards1 i{
     list-style: none;
 }
+
 #hebergements-cards1 p i{
     color: black;
 }
@@ -299,42 +304,31 @@ section#hebergement-marseille{
 #element{
     color: #000;
     font-weight: 800;
-    padding: 25px;
+    padding: 10px 10px 10px 10px;
     display: flex;
-}
-
-h3, p {
-    margin-bottom: 8px;
-    padding: 0px 15px;;
-}
-
-p + .star {
-    margin-top: 8px;
+    margin-top:15px;
 }
 
 .star{
-    margin:15px 0px;
-    padding:0px 15px;
+    padding: 8px 15px 15px 15px;
 }
+
 
 /****** Populaires ***********/
 .populaires {
     display: flex;
-    width: 429px;
-    padding: 30px;
     flex-direction: column;
     align-items: center;
     align-self: stretch;
     background: #F2F2F2;
     border-radius: 15px;
-    padding: 0px;
 }
 
 .populaires-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 90%;
 }
 
 .populaires-cards .card {
