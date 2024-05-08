@@ -63,6 +63,10 @@ input#bouton{
     padding-left: 16px;
 }
 
+#loupe{
+    display:none;
+}
+
 #section1 ul li:hover{
     background: #DEEBFF;
 }
@@ -160,7 +164,7 @@ header img{
 
 nav{
     align-self: center;
-    margin-top:-60px;
+    margin-top:0px;
 }
 
 nav ul{
@@ -173,13 +177,13 @@ nav ul{
 nav ul a{
     text-decoration: none;
     color:black;
+    border-top: 3px solid #FFFFFF;
+    padding-top: 6px;
 }
 
 nav a:hover{
     color:#0065FC;
-    border-top: 3px solid #FFFFFF;
-    padding-top: 6px;
-
+    border-top: 3px solid #0065FC;
 }
 
 ul{
@@ -239,7 +243,11 @@ a {
     width: 65%;
 }
 
-div.grid{
+#hebergement-cards1{
+    width: 100%;
+}
+
+div.grid1{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
@@ -388,6 +396,7 @@ section#hebergement-marseille{
 #activites div.grid{
     display:grid;
     grid-template-columns: repeat(4,1fr);
+    gap:30px;
 }
 
 #activites p {
@@ -453,27 +462,55 @@ footer ul li{
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+
+    .filter{
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 0px;
+    }
+
     .hebergements-and-populaires {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap:50px;
+       grid-template-columns: none;
+       gap: 0px;
     }
 
     .hebergements {
-        width: 30%;
+       width: 30%;
+    }
+
+    section#hebergement-marseille{
+        padding-bottom: 0px;
+        gap: 0px;
     }
 
     .populaires {
-        width: 100%;
-        margin-top: 50px;
+       width: 100%;
+       margin-top: 50px;
+    }
+
+    .section-title{
+        margin: 30px 0px 30px 0px;
+    }
+
+    .populaires-title{
+        width: 95%;
+    }
+
+    .populaires-cards .card{
+        margin: 20px;
     }
 
     .populaires-cards {
        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+       flex-direction: row;
+       justify-content: space-between;
     } 
+
+    .populaires-cards img{
+        width: 91px;
+        height: 146px;
+    }
 
     .populaires-cards a {
         width: 100%;
@@ -486,9 +523,23 @@ footer ul li{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    #activites .image-marseille{
+
+    }
+
+    #activites .image-marseille .legende{
+    font-size: 16px;
+}
+
+#activites div.grid{
+    
+}
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+
 }
