@@ -63,7 +63,11 @@ input#bouton{
     padding-left: 16px;
 }
 
-#loupe{
+button#loupe{
+    display:none;
+}
+
+button#loupe .fa-magnifying-glass{
     display:none;
 }
 
@@ -524,22 +528,121 @@ footer ul li{
         font-size: 13px;
     }
 
-    #activites .image-marseille{
-
+    #activites .image-marseille .legende{
+        font-size: 16px;
     }
 
-    #activites .image-marseille .legende{
-    font-size: 16px;
-}
-
-#activites div.grid{
-    
-}
+    #activites img{
+         height: 200px;
+    }
 
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
     /* ... */
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+    header img{
+        width: 61px;
+        height: 19px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    nav ul{
+        gap: 110px;
+    }
+
+    nav a:hover{
+        color:#0065FC;
+        border-bottom: 3px solid #0065FC; 
+    }
+
+
+
+
+    input#bouton{
+        display:none;
+    }
+
+    
+    button#loupe .fa-magnifying-glass{  
+        display: block;
+        width: 9px;
+        height: 14px;
+        padding: 18px;
+        background-color: blue;
+        color: white;
+        border-radius: 15px;
+    }
+    
+    button#loupe{
+        display: flex;
+        align-items: center;
+        border: 1px solid #f2f2f2;
+        border-radius: 15px;
+        background: #0065FC;
+        padding: 0px;
+    }
+
+    #section1 .filter ul{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    section#hebergement-marseille{
+        background: none;
+    }
+
+    div.grid1{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+
+    #hebergement-marseille{
+        order:2;
+    }
+
+    #hebergement-cards1 article{
+
+    }
+
+
+    .populaires{
+        order:1;
+        margin-top: 35px;
+    }
+    
+    .populaires-title{
+        width:54%;
+    } 
+
+
+    .populaires-cards{
+        display:grid;
+    }
+
+
+
+
+    #activites div.grid{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+    }
+
+
+
+    footer{
+        grid-template-columns: repeat(1,1fr);
+        gap: 50px;
+    }
 
 }
