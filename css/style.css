@@ -424,6 +424,7 @@ section#hebergement-marseille{
     background-color: #FFFFFF;
     box-shadow: 0px 2px 5px #c1c1c1;
     border-radius: 20px;
+    height:100%;
 }
 
 #activites .image-marseille .legende{
@@ -541,6 +542,19 @@ footer ul li{
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 767.98px) {
     /* ... */
+    .main-container{
+        padding:0px;
+    }
+
+    body{
+        margin:0px;
+    }
+
+
+    #section1{
+        margin: 0px 14px;
+    }
+
     header{
         flex-direction: column;
         align-items: center;
@@ -554,19 +568,28 @@ footer ul li{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 15px;
+        width: 100%;
     }
 
     nav ul{
-        gap: 110px;
+        width: 100%;
+        gap: 0px;
     }
 
     nav a:hover{
         color:#0065FC;
         border-bottom: 3px solid #0065FC; 
+        border-top: none;
+    }
+    
+    nav li{
+        width: 50%;
+        border-bottom: 3px solid #f2f2f2;
     }
 
-
+    nav ul a{
+        margin-left: 100px;
+    }
 
 
     input#bouton{
@@ -582,6 +605,7 @@ footer ul li{
         background-color: blue;
         color: white;
         border-radius: 15px;
+        margin-left: -13px;
     }
     
     button#loupe{
@@ -596,6 +620,7 @@ footer ul li{
     #section1 .filter ul{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
+        width: 44em;
     }
 
     section#hebergement-marseille{
@@ -619,10 +644,11 @@ footer ul li{
     .populaires{
         order:1;
         margin-top: 35px;
+        border-radius: 0px;
     }
     
     .populaires-title{
-        width:54%;
+        width:94%;
     } 
 
 
@@ -630,8 +656,15 @@ footer ul li{
         display:grid;
     }
 
+    .populaires-cards .card {
+        justify-content: stretch;
+        width: calc(100em - 881px);
+    }
 
+    .populaires-cards a{
 
+        
+    }
 
     #activites div.grid{
         grid-template-columns: repeat(1, 1fr);
