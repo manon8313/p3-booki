@@ -602,10 +602,10 @@ footer ul li{
         width: 9px;
         height: 14px;
         padding: 18px;
-        background-color: blue;
+        background-color:#0065FC;
         color: white;
         border-radius: 15px;
-        margin-left: -13px;
+        margin-left: -17px;
     }
     
     button#loupe{
@@ -653,12 +653,13 @@ footer ul li{
 
 
     .populaires-cards{
-        display:grid;
+        display:flex;
+        flex-direction: column;
+        width:100%;
     }
 
     .populaires-cards .card {
         justify-content: stretch;
-        width: calc(100em - 881px);
     }
 
     .populaires-cards a{
