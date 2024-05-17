@@ -586,11 +586,15 @@ footer ul li{
     
     nav li{
         width: 50%;
-        border-bottom: 3px solid #f2f2f2;
     }
 
     nav ul a{
-        margin-left: 100px;
+        text-align: center;
+        display:flex;
+        justify-content: center;
+        padding-bottom:30px;
+        border-top: 0px;
+        border-bottom: 3px solid #f2f2f2;
     }
 
 
@@ -667,6 +671,10 @@ footer ul li{
     .populaires-cards a{
 
         
+    }
+
+    #activites{
+        padding:10px 30px 5px 30px;
     }
 
     #activites div.grid{
