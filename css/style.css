@@ -131,6 +131,7 @@ button#loupe .fa-magnifying-glass{
     justify-content: center;
     align-items: center;  
     margin-right: 10px; 
+    min-width:24px;
 }
 
 #section1 ul li{
@@ -552,7 +553,6 @@ footer ul li{
         margin:0px;
     }
 
-
     #section1{
         margin: 0px 14px;
     }
@@ -623,6 +623,11 @@ footer ul li{
         padding: 0px;
     }
 
+
+    #section1 form{
+        width:auto;
+    }
+
     #section1 .filter ul{
         display: grid;
         grid-template-columns: repeat(2, 2fr);
@@ -641,11 +646,6 @@ footer ul li{
     #hebergement-marseille{
         order:2;
     }
-
-    #hebergement-cards1 article{
-
-    }
-
 
     .populaires{
         order:1;
